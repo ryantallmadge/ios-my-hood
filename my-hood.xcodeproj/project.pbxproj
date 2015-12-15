@@ -12,6 +12,11 @@
 		C00A428F1C1F39BE0081AE68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00A428D1C1F39BE0081AE68 /* Main.storyboard */; };
 		C00A42911C1F39BE0081AE68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00A42901C1F39BE0081AE68 /* Assets.xcassets */; };
 		C00A42941C1F39BE0081AE68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00A42921C1F39BE0081AE68 /* LaunchScreen.storyboard */; };
+		C00A429D1C1F3A2C0081AE68 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A429C1C1F3A2C0081AE68 /* PostModel.swift */; };
+		C00A42A01C1F40670081AE68 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A429F1C1F40670081AE68 /* PostTableViewCell.swift */; };
+		C00A42A31C1F447E0081AE68 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A42A21C1F447E0081AE68 /* AddPostViewController.swift */; };
+		C00A42A61C1F49800081AE68 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A42A51C1F49800081AE68 /* CircleImageView.swift */; };
+		C00A42A91C20702C0081AE68 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A42A81C20702B0081AE68 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		C00A42901C1F39BE0081AE68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C00A42931C1F39BE0081AE68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C00A42951C1F39BE0081AE68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00A429C1C1F3A2C0081AE68 /* PostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		C00A429F1C1F40670081AE68 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C00A42A21C1F447E0081AE68 /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		C00A42A51C1F49800081AE68 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		C00A42A81C20702B0081AE68 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,59 @@
 		C00A42881C1F39BE0081AE68 /* my-hood */ = {
 			isa = PBXGroup;
 			children = (
+				C00A42A71C2070140081AE68 /* Services */,
+				C00A42A41C1F49540081AE68 /* CustomClasses */,
+				C00A42A11C1F445A0081AE68 /* Controller */,
+				C00A429E1C1F40400081AE68 /* View */,
+				C00A429B1C1F39EE0081AE68 /* Model */,
 				C00A42891C1F39BE0081AE68 /* AppDelegate.swift */,
-				C00A428B1C1F39BE0081AE68 /* ViewController.swift */,
 				C00A428D1C1F39BE0081AE68 /* Main.storyboard */,
 				C00A42901C1F39BE0081AE68 /* Assets.xcassets */,
 				C00A42921C1F39BE0081AE68 /* LaunchScreen.storyboard */,
 				C00A42951C1F39BE0081AE68 /* Info.plist */,
 			);
 			path = "my-hood";
+			sourceTree = "<group>";
+		};
+		C00A429B1C1F39EE0081AE68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C00A429C1C1F3A2C0081AE68 /* PostModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C00A429E1C1F40400081AE68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C00A429F1C1F40670081AE68 /* PostTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C00A42A11C1F445A0081AE68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C00A428B1C1F39BE0081AE68 /* ViewController.swift */,
+				C00A42A21C1F447E0081AE68 /* AddPostViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C00A42A41C1F49540081AE68 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C00A42A51C1F49800081AE68 /* CircleImageView.swift */,
+			);
+			name = CustomClasses;
+			sourceTree = "<group>";
+		};
+		C00A42A71C2070140081AE68 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C00A42A81C20702B0081AE68 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00A429D1C1F3A2C0081AE68 /* PostModel.swift in Sources */,
+				C00A42A91C20702C0081AE68 /* DataService.swift in Sources */,
+				C00A42A31C1F447E0081AE68 /* AddPostViewController.swift in Sources */,
 				C00A428C1C1F39BE0081AE68 /* ViewController.swift in Sources */,
 				C00A428A1C1F39BE0081AE68 /* AppDelegate.swift in Sources */,
+				C00A42A61C1F49800081AE68 /* CircleImageView.swift in Sources */,
+				C00A42A01C1F40670081AE68 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
